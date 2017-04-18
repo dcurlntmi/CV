@@ -1,0 +1,46 @@
+div {
+    color: blue;
+}
+
+span {
+    color: red
+}
+
+* {
+    color: #dd16be
+}
+
+
+/* 色碼 數字1-9, 英文A-F
+#FFFFFF
+前兩個FF代表Red
+六個都F代表白色
+
+"."=class  ,  " # "=id */
+
+.title {
+    color: yellow
+}
+
+#title1 {
+    color: green
+}
+
+h2,
+li {
+    color: darkseagreen
+}
+
+.cv {
+    width: 800px;
+    ;
+    height: 1000px;
+    background-color: cornflowerblue
+}
+
+body,
+html {
+    /* padding= 對內部空間的留白 */
+    padding: 0;
+    margin: 0;
+}

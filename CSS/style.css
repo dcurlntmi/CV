@@ -1,0 +1,33 @@
+.important {
+    color: red;
+    font-size: 100px;
+}
+
+td,
+table {
+    border: 2px/* 框線的粗細 */
+    solid/* 框線的樣式 */
+    red/* 框線的顏色*/
+    ;
+    border-collapse: collapse;
+}
+
+input {
+    display: block;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+}
+
+.title {
+    color: red;
+    font-size: 40px;
+}
+
+.title {
+    color: #7f1fc6;
+    /* ctl+E可以直接叫出選色表 */
+    font-size: 52px;
+}

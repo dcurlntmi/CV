@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+/* 讓所有大小的計算以border-box為基礎  */
+
+* {
+    font-family: 'Exo', sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box color: #333;
+}
+
+.cv {
+    width: 800px;
+    ;
+    background-color: cornflowerblue;
+    margin: 100px auto;
+    /*  margin-left: 200px 到左邊邊界空出200px */
+    /* margin: 200px; 400px; */
+    /*  設定margin時, 第一個值代表左右距離, 第二個值代表上下距離 */
+    border: 10px solid green;
+    /*     加上border後CV區塊的width變回820px (由原本設定的width:800px再加上border: 10pxX2=20)
+    這時候需要在CSS裡加入* { */
+    box-sizing: border-box;
+    /*     讓border在CV區塊內往內長,
+    而不是向外擴張 */
+    position: relative;
+    z-index: 5;
+    /*  box-shadow: x偏移 y偏移 模糊值 (縮放值) 顏色; */
+    box-shadow: 0 30px 0px -10px rgba(0, 0, 0, 0.5)
+    /*  顏色也可以rgba表示, 且多了最後一欄不透明度能設定, 例如 rgba(0, 0, 0, 0.5) */
+}
+
+body,
+html {
+    /* padding= 對內部空間的留白 */
+    padding: 0;
+    margin: 0;
+    background-color: white
+}
+
+
+/* note header */
+
+header {
+    background-color: #555555;
+    padding-top: 50px;
+    0.1 padding-bottom: 50px;
+}
+
+header,
+.intro,
+.experience-list,
+footer {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.name {
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 0;
+    margin-bottom: 10;
+    text-transform: uppercase;
+    /* 大寫 */
+    /*  text-transform:capitalize; 首字母大寫 */
+}
+
+.current-job-title {
+    margin: 0
+}
+
+
+/* note experience */
+
+.experience {
+    border-bottom: 50px solid #ff0000;
+}
+
+.experience: last-child {
+    border-bottom: none;
+}
+
+footer {
+    background-color: darkorange;
+    padding-bottom: 50ps;
+    padding-top: 30px
+}
+
+.section-title {
+    font-family: 'EB Garamond', serif;
+    font-weight: 100px;
+    text-transform: uppercase;
+}
+
+footer * {
+    color: white;
+}
+
+
+/* 
+pseudo element 偽元素: CSS產生出來的, 不會顯現在HTML上
+只有兩個元素: before 和 after */
+
+.name:before {
+    content: "姓名:"
+}
+
+.name:after {
+    content: "姓名:"
+}
+
+html {
+    width: 100%;
+    position: relative;
+}
+
+html:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* z-index圖層上下排列順序 */
+}

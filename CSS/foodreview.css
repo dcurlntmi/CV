@@ -1,0 +1,69 @@
+                .Logo {
+                    font-size: 40px;
+                    font-family: 'Indie Flower', cursive;
+                    vertical-align: baseline
+                }
+                
+                .Logo_tagline {
+                    font-size: 10px;
+                    font-family: 'Orbitron', sans-serif;
+                }
+                
+                body {
+                    background-attachment: scroll;
+                    background-image: url("http://unsplash.it/500/500/?image=1068");
+                    background-repeat: repeat-x;
+                }
+                
+                section {
+                    display: table;
+                }
+                
+                .Logo_center {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 400px;
+                    height: 150px;
+                    margin: 10px auto;
+                    display: table-header-group;
+                    vertical-align: middle;
+                    text-align: center;
+                }
+                
+                .Logo_footer {
+                    position: absolute;
+                    top: 10;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 400px;
+                    height: 150px;
+                    margin: 10px auto;
+                    display: table-footer-group;
+                    vertical-align: middle;
+                    text-align: center;
+                }
+                
+                .content {
+                    position: absolute;
+                    top: 1;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 400px;
+                    height: 150px;
+                    margin: 200px auto;
+                    border: 50;
+                    vertical-align: middle;
+                    text-align: center;
+                    font-size: 100%;
+                    font: inherit;
+                    display: table-row-group
+                }
+                
+                div {
+                    display: block
+                }
